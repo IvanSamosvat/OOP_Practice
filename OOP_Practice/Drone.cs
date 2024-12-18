@@ -1,71 +1,67 @@
-﻿using System;
+﻿using OOP_Practice;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice
-{   public class Drone
+public class Drone : Machine, StatusUpdatable, Monitorable, Assignable
+{
+    public DroneType Type { get; private set; }
+    public int BatteryLevel { get; private set; }
+    public DroneStatus Status { get; private set; }
+    public string Location { get; private set; }
+
+    public Drone(int id, DroneType type)
     {
-        public int Id { get; private set; }
-        public DroneType Type { get; private set; }
-        public int BatteryLevel { get; private set; }
-        public DroneStatus Status { get; private set; }
-        public string Location { get; private set; }
-
-        public Drone(int id, DroneType type)
-        {
-
-            throw new NotImplementedException();
-        }
-
-        public void StartMission(Mission mission)
-        {
-
-            throw new NotImplementedException();
-        }
-
-        public void ReturnToBase()
-        {
-
-            throw new NotImplementedException();
-        }
-
-        public void UpdateBatteryLevel(int level)
-        {
-
-            throw new NotImplementedException();
-        }
-
-        public void UpdateLocation(string newLocation)
-        {
-
-            throw new NotImplementedException();
-        }
-
-        public void SelfCheck()
-        {
-
-            throw new NotImplementedException();
-        }
-
-        public void Monitor()
-        {
-
-            throw new NotImplementedException();
-        }
-
-        public void Assign(object obj)
-        {
-
-            throw new NotImplementedException();
-        }
-
-        public void UpdateStatus(Enum status)
-        {
-
-            throw new NotImplementedException();
-        }
+        Id = id;
+        Type = type;
+        BatteryLevel = 100;
+        Status = DroneStatus.ACTIVE;
+        Location = "Base";
     }
+
+    // Реалізація абстрактного методу Start з класу Machine
+    public override void Start()
+    {
+        Status = DroneStatus.ACTIVE;
+        Console.WriteLine($"Drone {Id} started.");
+    }
+
+    // Реалізація методу моніторингу з інтерфейсу Monitorable
+    public void Monitor()
+    {
+        Console.WriteLine($"Drone {Id} monitoring at location {Location}.");
+    }
+
+    // Реалізація методу для оновлення статусу з інтерфейсу IStatusUpdatable
+    public void UpdateStatus(Enum status)
+    {
+        Status = (DroneStatus)status;
+        Console.WriteLine($"Drone {Id} status updated to {Status}.");
+    }
+
+    // Інші методи
+    public void StartMission(Mission mission)
+    {
+        Status = DroneStatus.ACTIVE;
+        Console.WriteLine($"Drone {Id} started mission {mission.Id}.");
+    }
+
+    public void ReturnToBase()
+    {
+        Location = "Base";
+        Status = DroneStatus.CHARGING;
+        Console.WriteLine($"Drone {Id} returned to base.");
+    }
+
+    public void UpdateBatteryLevel(int level) => BatteryLevel = level;
+
+    public void UpdateLocation(string newLocation) => Location = newLocation;
+
+    public void SelfCheck() => Console.WriteLine($"Drone {Id} is {Status} with {BatteryLevel}% battery.");
+
+    public void Assign(object obj) => Console.WriteLine($"Drone {Id} assigned to object.");
 }
+

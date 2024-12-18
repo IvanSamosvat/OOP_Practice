@@ -1,0 +1,15 @@
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\bin\Debug\net8.0\OOP_Practice.exe
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\bin\Debug\net8.0\OOP_Practice.deps.json
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\bin\Debug\net8.0\OOP_Practice.runtimeconfig.json
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\bin\Debug\net8.0\OOP_Practice.dll
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\bin\Debug\net8.0\OOP_Practice.pdb
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\OOP_Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\OOP_Practice.AssemblyInfoInputs.cache
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\OOP_Practice.AssemblyInfo.cs
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\OOP_Practice.csproj.CoreCompileInputs.cache
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\OOP_Practice.sourcelink.json
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\OOP_Practice.dll
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\refint\OOP_Practice.dll
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\OOP_Practice.pdb
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\OOP_Practice.genruntimeconfig.cache
+C:\Users\byzil\source\repos\OOP_Practice\OOP_Practice\obj\Debug\net8.0\ref\OOP_Practice.dll
